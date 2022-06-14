@@ -15,7 +15,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        Association::factory(4)->create();
+        $this->call(ActivitySeeder::class);
+        $this->call(AssociateSeeder::class);
+        $this->call(AssociationSeeder::class);
+        $this->call(FamilySeeder::class);
+        $this->call(PeriodSeeder::class);
+        $this->call(StandSeeder::class);
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
