@@ -15,6 +15,6 @@ class DebitSeeder extends Seeder
      */
     public function run()
     {
-        Debit::factory(10)->create();
+        Debit::factory(5)->create();
     }
 }

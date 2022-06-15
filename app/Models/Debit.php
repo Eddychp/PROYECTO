@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Debit extends Model
 {
+    protected $guarded=['id'];
     use HasFactory;
     public function Associate(){
         return $this->belongsTo(Associate::class);

@@ -17,7 +17,5 @@ class People extends Model
         return $this->hasMany(Associate::class);
     }
 
-    public function Location(){
-        return $this->belongsTo(Location::class);
-    }
+
 }

@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Activity extends Model
 {
+    protected $guarded=['id'];
     use HasFactory;
     public function Payments(){
         return $this ->hasMany(Payment::class);

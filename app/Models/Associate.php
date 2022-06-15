@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Associate extends Model
 {
+    protected $guarded=['id'];
     use HasFactory;
     public function Stand(){
         return $this->belongsTo(Stand::class);

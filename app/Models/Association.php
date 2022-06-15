@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Association extends Model
 {
+    protected $guarded=['id'];
     use HasFactory;
     public function Activities(){
         return $this->hasMany(Activity::class);
