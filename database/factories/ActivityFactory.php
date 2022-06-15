@@ -23,6 +23,7 @@ class ActivityFactory extends Factory
             'datatime' => $this->faker->date(),
             'penalty' => $this->faker->text,
             'association_id'=>Association::all()->random()->id,
+
         ];
     }
 }

@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\Family;
+use App\Models\Debit;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class FamilySeeder extends Seeder
+class DebitSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,7 +15,6 @@ class FamilySeeder extends Seeder
      */
     public function run()
     {
-       Family::factory(10)->create();
-        //
+        Debit::factory(10)->create();
     }
 }

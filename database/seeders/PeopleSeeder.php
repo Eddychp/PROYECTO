@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\Family;
+use App\Models\People;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class FamilySeeder extends Seeder
+class PeopleSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,7 +15,6 @@ class FamilySeeder extends Seeder
      */
     public function run()
     {
-       Family::factory(10)->create();
-        //
+        People::factory(10)->create();
     }
 }

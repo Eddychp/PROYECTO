@@ -19,7 +19,7 @@ class StandFactory extends Factory
 
         return [
             'name'=>$this->faker->randomDigit(),
-            'row'=>$this->faker->text(1)
+            'row'=>$this->faker->text()
 
         ];
     }

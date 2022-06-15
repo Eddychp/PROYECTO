@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('activities', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->text('descrition');
+            $table->text('description');
             $table->string('datatime');
             $table->string('penalty');
             $table->unsignedBigInteger('association_id');

@@ -17,16 +17,15 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('fatherlastname');
-            $table->string('mothername');
+            $table->string('motherlastname');
             $table->string('dni');
             $table->string('birtdate');
             $table->string('maricalstaus');
             $table->string('sexo');
             $table->string('phone');
-            $table->string('gmail');
+            $table->string('email');
             $table->string('address');
-            $table->unsignedBigInteger('location_id');
-            $table->foreign('location_id')->references('id')->on('locations')->onDelete('cascade');
+
 
 
 

@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\Association;
+
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -15,12 +15,23 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(ActivitySeeder::class);
+        $this->call(PeopleSeeder::class);
+        $this->call(FamilySeeder::class);
+        $this->call(StandSeeder::class);
+        $this->call(PeriodSeeder::class);
         $this->call(AssociateSeeder::class);
         $this->call(AssociationSeeder::class);
-        $this->call(FamilySeeder::class);
-        $this->call(PeriodSeeder::class);
-        $this->call(StandSeeder::class);
+        $this->call(DebitSeeder::class);
+        $this->call(ActivitySeeder::class);
+        $this->call(AssistenceSeeder::class);
+
+
+
+
+        $this->call(PaymentSeeder::class);
+
+
+
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',

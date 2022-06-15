@@ -17,7 +17,7 @@ class PeriodFactory extends Factory
     public function definition()
     {
         return [
-            'description'=>$this->faker->text(30),
+            'description'=>$this->faker->text(),
             'status'=>$this->faker->randomElement(['activo','inactivo']),
         ];
     }

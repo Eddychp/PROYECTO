@@ -6,7 +6,7 @@ use App\Models\Associate as ModelsAssociate;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class Associate extends Seeder
+class AssociateSeeder extends Seeder
 {
     /**
      * Run the database seeds.
