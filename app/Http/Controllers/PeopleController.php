@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\PeoplePostRequest;
-use App\Http\Requests\PeriodPostRequest;
+
 use App\Models\People;
 
 class PeopleController extends Controller{
@@ -14,7 +14,7 @@ class PeopleController extends Controller{
         return response()->json($peoples);
     }
 
-    public function store(PeriodPostRequest $request){
+    public function store(PeoplePostRequest $request){
         $people = People::create($request->all());
 
         return response()->json([
@@ -23,7 +23,7 @@ class PeopleController extends Controller{
         ], 200);
     }
 
-    public function update(PeriodPostRequest $request, People $people){
+    public function update(PeoplePostRequest $request, People $people){
         $people->update($request->all());
 
         return response()->json([

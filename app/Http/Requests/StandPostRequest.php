@@ -26,6 +26,7 @@ class StandPostRequest extends FormRequest
         return [
             'name'=>"required",
             'row'=>"required",
+            'column'=>"required",
         ];
     }
 }

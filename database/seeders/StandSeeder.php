@@ -15,6 +15,6 @@ class StandSeeder extends Seeder
      */
     public function run()
     {
-        Stand::factory(5)->create();
+        Stand::factory(50)->create();
     }
 }

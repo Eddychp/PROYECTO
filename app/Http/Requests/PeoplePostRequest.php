@@ -29,12 +29,13 @@ class PeoplePostRequest extends FormRequest
             'fatherlastname'=>"required",
             'motherlastname'=>"required",
             'dni'=>"required",
-            'birthdate'=>"required",
+            'birtdate'=>"required",
             'maricalstaus'=>"required",
             'sexo'=>"required",
             'phone'=>"required" ,
             'email'=>"required",
             'address'=>"required",
+
 
         ];
     }
